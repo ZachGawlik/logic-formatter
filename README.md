@@ -16,3 +16,8 @@ notes and later running the program on the file to improve readability.
 |Implies     | =>     | →     |
 |Equivalence | ==     | ≡     |
 
+Usage
+------
+Add the file to be formatted as an command-line argument after python file.
+`LogicFormatter.py filename.`
+Requires Python 3.
