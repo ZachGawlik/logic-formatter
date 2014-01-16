@@ -18,6 +18,8 @@ notes and later running the program on the file to improve readability.
 
 Usage
 ------
-Add the file to be formatted as an command-line argument after python file.
-`LogicFormatter.py filename.`
+Add the file to be formatted as a command-line argument after python file.
+
+`LogicFormatter.py filename`
+
 Requires Python 3.
