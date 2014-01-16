@@ -1,0 +1,15 @@
+Excerpt from my CS2800 Logic and Computation homework.
+Used to show improved readability after running it through LogicFormatter.py
+
+1. (S=>I)/\ (D => I) /\~I =>~(~S=> D) == (S=>I)/\(D=>I)/\~I =>(~S /\~D)
+
+2. Prove the following conjecture:
+
+phi: (listp x) /\ (listp y) => ((subsetp x y) => (subsetp x (cons a y)))
+     == (listp x) /\ (listp y) /\ (subsetp x y) => (subsetp x (cons a y))
+
+Inductive scheme induced by subsetp:
+1. ~((listp x) /\ (listp y)) => phi
+2. (listp x) /\(listp y) /\ (endp x) => phi
+3. (listp x)/\ (listp y) /\ ~(endp x) /\ ~(in (first x) y) => phi
+4. (listp x)/\(listp y) /\~(endp x) /\ (in (first x) y) /\ phi|((x (rest x))) => phi
